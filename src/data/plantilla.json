@@ -1,0 +1,137 @@
+[
+  {
+    "nombre": "Dr. Miguel Soto",
+    "edad": 45,
+    "puesto": "Cardiólogo",
+    "sueldo": 85000,
+    "antiguedad": 10,
+    "foto": "https://randomuser.me/api/portraits/men/20.jpg",
+    "id": 1001
+  },
+  {
+    "nombre": "Dra. Ana López",
+    "edad": 38,
+    "puesto": "Pediatra",
+    "sueldo": 78000,
+    "antiguedad": 8,
+    "foto": "https://randomuser.me/api/portraits/women/10.jpg",
+    "id": 1002
+  },
+  {
+    "nombre": "Dr. Carlos Méndez",
+    "edad": 50,
+    "puesto": "Cirujano General",
+    "sueldo": 92000,
+    "antiguedad": 15,
+    "foto": "https://randomuser.me/api/portraits/men/30.jpg",
+    "id": 1003
+  },
+  {
+    "nombre": "Dra. Lucía Pérez",
+    "edad": 33,
+    "puesto": "Dermatóloga",
+    "sueldo": 70000,
+    "antiguedad": 6,
+    "foto": "https://randomuser.me/api/portraits/women/21.jpg",
+    "id": 1004
+  },
+  {
+    "nombre": "Dr. Jorge Ramírez",
+    "edad": 46,
+    "puesto": "Anestesiólogo",
+    "sueldo": 88000,
+    "antiguedad": 11,
+    "foto": "https://randomuser.me/api/portraits/men/25.jpg",
+    "id": 1005
+  },
+  {
+    "nombre": "Dra. Verónica Díaz",
+    "edad": 41,
+    "puesto": "Ginecóloga",
+    "sueldo": 83000,
+    "antiguedad": 9,
+    "foto": "https://randomuser.me/api/portraits/women/23.jpg",
+    "id": 1006
+  },
+  {
+    "nombre": "Dr. Ricardo Torres",
+    "edad": 37,
+    "puesto": "Ortopedista",
+    "sueldo": 75000,
+    "antiguedad": 7,
+    "foto": "https://randomuser.me/api/portraits/men/34.jpg",
+    "id": 1007
+  },
+  {
+    "nombre": "Dra. Elena Herrera",
+    "edad": 36,
+    "puesto": "Endocrinóloga",
+    "sueldo": 79000,
+    "antiguedad": 8,
+    "foto": "https://randomuser.me/api/portraits/women/29.jpg",
+    "id": 1008
+  },
+  {
+    "nombre": "Dr. Tomás Guzmán",
+    "edad": 39,
+    "puesto": "Psiquiatra",
+    "sueldo": 81000,
+    "antiguedad": 9,
+    "foto": "https://randomuser.me/api/portraits/men/38.jpg",
+    "id": 1009
+  },
+  {
+    "nombre": "Dra. Isabel Vargas",
+    "edad": 29,
+    "puesto": "Médico General",
+    "sueldo": 62000,
+    "antiguedad": 4,
+    "foto": "https://randomuser.me/api/portraits/women/34.jpg",
+    "id": 1010
+  },
+  {
+    "nombre": "Dr. Diego Rojas",
+    "edad": 43,
+    "puesto": "Neurólogo",
+    "sueldo": 87000,
+    "antiguedad": 10,
+    "foto": "https://randomuser.me/api/portraits/men/40.jpg",
+    "id": 1011
+  },
+  {
+    "nombre": "Dra. Paula Castro",
+    "edad": 35,
+    "puesto": "Reumatóloga",
+    "sueldo": 77000,
+    "antiguedad": 7,
+    "foto": "https://randomuser.me/api/portraits/women/40.jpg",
+    "id": 1012
+  },
+  {
+    "nombre": "Dr. Héctor Navarro",
+    "edad": 48,
+    "puesto": "Oncólogo",
+    "sueldo": 91000,
+    "antiguedad": 12,
+    "foto": "https://randomuser.me/api/portraits/men/50.jpg",
+    "id": 1013
+  },
+  {
+    "nombre": "Dra. Camila Silva",
+    "edad": 31,
+    "puesto": "Radióloga",
+    "sueldo": 76000,
+    "antiguedad": 6,
+    "foto": "https://randomuser.me/api/portraits/women/45.jpg",
+    "id": 1014
+  },
+  {
+    "nombre": "Dr. Iván Ortega",
+    "edad": 44,
+    "puesto": "Internista",
+    "sueldo": 84000,
+    "antiguedad": 9,
+    "foto": "https://randomuser.me/api/portraits/men/52.jpg",
+    "id": 1015
+  }
+]

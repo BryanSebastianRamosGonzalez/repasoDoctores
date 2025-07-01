@@ -1,0 +1,40 @@
+<div class="container py-4 d-flex justify-content-center">
+    <div class="w-100" style="max-width: 100%;">
+        <h2 class="mb-4 text-center">Lista de Empleados</h2>
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle text-center">
+                <thead class="table-primary">
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Sueldo</th>
+                        <th scope="col">Antiguedad</th>
+                        <th scope="col">Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (doctor of misDoctores; track doctor.id) {
+                    <tr>
+                        <td>{{ doctor.id }}</td>
+                        <td>{{ doctor.nombre }}</td>
+                        <td>{{ doctor.edad }}</td>
+                        <td>
+                            <span class="badge text-bg-success">
+                                ${{ doctor.sueldo | number: '1.0-0' }}
+                            </span>
+                        </td>
+                        <td> {{doctor.antiguedad}} año{{doctor.antiguedad> 1 ?'s' : ''}}</td>
+                        <td>
+                            <img [src]="doctor.foto" class="rounded-circle shadow-sm" width="60" height="60"
+                                alt="foto de {{doctor.nombre}}">
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
