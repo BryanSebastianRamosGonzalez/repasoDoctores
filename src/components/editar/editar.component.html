@@ -1,0 +1,42 @@
+@if (mensajeExito !== '') {
+  <div class="alerta-flotante alert alert-success alert-dismissible fade-in-out text-center">
+    {{ mensajeExito }}   
+  </div>
+}
+<div class="container mt-4"> <!-- Contenedor principal para el formulario de agregar empleados -->
+    <h3>Actualizar Doctores </h3>
+    <form #form="ngForm" (ngSubmit)="actualizar()"> <!-- Formulario para agregar un empleado -->
+        <div class="mb-3">
+            <label>ID</label>
+            <input type="number" class="form-control" [(ngModel)]="doctor.id" name="id" readonly> <!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DEL ID -->
+        </div>
+        <div class="mb-3">
+            <label>Nombre</label>
+            <input type="text" class="form-control" [(ngModel)]="doctor.nombre" name="nombre" required> <!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DEL NOMBRE -->
+        </div>
+        <div class="mb-3">
+            <label>Edad</label>
+            <input type="number" class="form-control" [(ngModel)]="doctor.edad" name="edad" required> <!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DE LA EDAD -->
+        </div>
+        <div class="mb-3">
+            <label>Sueldo</label>
+            <input type="number" class="form-control" [(ngModel)]="doctor.sueldo" name="sueldo" required> <!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DEL SUELDO -->
+        </div>
+        <div class="mb-3">
+            <label>Antigüedad</label>
+            <input type="number" class="form-control" [(ngModel)]="doctor.antiguedad" name="antiguedad" required> <!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DE LA ANTIGUEDAD -->
+        </div>
+        <div class="mb-3">
+            <input class="form-check-input" type="checkbox" [(ngModel)]="esFemenino" name="esFemenino" id="esFemenino"><!-- AQUI SE USO EL DOUBLE BINDING PARA QUE SE ACTUALICE EL VALOR DE LA VARIABLE ES FEMENINO -->
+            <label class="form-check-label" for="esFemenino">¿Es femenino?</label>
+        </div>
+        <div class="mb-3">
+            <label></label>
+            <button type="button" class="btn btn-secondary" (click)="asignarFotoaleatorio()">Asignar foto aleatoria</button> <!-- Botón para asignar una foto aleatoria -->
+            @if(doctor.foto){
+            <img [src]="doctor.foto" class="img-thumbnail"  width="150">
+            }  <!-- Muestra la foto del empleado si existe -->
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Guardar</button> <!-- Botón para guardar el empleado, deshabilitado si el formulario es inválido -->
+    </form>
+</div>

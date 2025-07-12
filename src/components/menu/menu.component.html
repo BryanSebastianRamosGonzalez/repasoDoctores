@@ -7,22 +7,26 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="listar" routerLinkActive="router-link-active" >Listar</a>
+          <a class="nav-link active" aria-current="page" routerLink="listar">Listar</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="agregar" routerLinkActive="router-link-active" >Agregar</a>
+
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="agregar">Agregar</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Eliminar</a>
+
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="eliminar">Eliminar</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Actualizar</a>
+
+         <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="actualizar">Actualizar</a>
         </li>
+         
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+        <div class="d-flex" role="search">
+          <input #cajaId class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" (click)="consultar(cajaId.value); cajaId.value=''">Search</button>
+      </div>
     </div>
   </div>
 </nav>

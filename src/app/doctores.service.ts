@@ -34,4 +34,20 @@ export class DoctoresService {
     this.doctores.push(objeto);
     localStorage.setItem('trabajadores', JSON.stringify(this.doctores));
   }
+
+  delete(idDoc: number): void {
+    const index = this.doctores.findIndex(doc => doc.id === idDoc);
+    if (index !== -1) {
+      this.doctores.splice(index, 1);
+      localStorage.setItem('Doctores', JSON.stringify(this.doctores));
+    }
+  }
+
+  update(objeto: Personal): void {
+    const index = this.doctores.findIndex(doc => doc.id === objeto.id);
+    if (index !== -1) {
+      this.doctores[index] = objeto;
+      localStorage.setItem('Doctores', JSON.stringify(this.doctores));
+    }
+  }
 }
