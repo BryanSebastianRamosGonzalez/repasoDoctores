@@ -5,6 +5,7 @@ import { ConsultaComponent } from '../components/consulta/consulta/consulta.comp
 import { EliminarComponent } from '../components/eliminar/eliminar.component';
 import { ActualizarComponent } from '../components/actualizar/actualizar.component';
 import { EditarComponent } from '../components/editar/editar.component';
+import { ContactComponent } from '../components/contact/contact.component';
 
 export const routes: Routes = [
      {path: 'listar', component: ListarDoctoresComponent},
@@ -12,6 +13,7 @@ export const routes: Routes = [
     {path: 'consulta/:id', component: ConsultaComponent},
     {path: 'eliminar', component: EliminarComponent},
     {path: 'actualizar', component: ActualizarComponent},
+    {path: 'contacto', component: ContactComponent},
     {path: 'editar/:id', component: EditarComponent},
     {path: '', redirectTo: '/listar', pathMatch: 'full'},
     {path: '**', redirectTo: '/listar'}
