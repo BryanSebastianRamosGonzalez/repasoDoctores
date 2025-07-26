@@ -1,0 +1,37 @@
+<div class="container mt-5">
+  <div class="card p-4 shadow">
+    <h3 class="mb-4">Contáctanos</h3>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" class="form-control" formControlName="name"
+          [ngClass]="{ 'is-invalid': contactForm.get('name')?.invalid && contactForm.get('name')?.touched }">
+        <div class="invalid-feedback">Este campo es obligatorio.</div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" formControlName="email"
+          [ngClass]="{ 'is-invalid': contactForm.get('email')?.invalid && contactForm.get('email')?.touched }">
+        <div class="invalid-feedback">
+          Ingresa un correo válido.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Mensaje</label>
+        <textarea class="form-control" rows="4" formControlName="message"
+          [ngClass]="{ 'is-invalid': contactForm.get('message')?.invalid && contactForm.get('message')?.touched }">
+        </textarea>
+        <div class="invalid-feedback">El mensaje es obligatorio.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    <div class="alert alert-success mt-3" *ngIf="formEnviado">
+  ¡Tu mensaje ha sido enviado con éxito!
+</div>
+
+  </div>
+</div>
